@@ -6,3 +6,4 @@ from .models import *
 @admin.register(Question)
 class TelegramUserAdmin(admin.ModelAdmin):
     list_display = ['id', 'question_id', 'question_text', 'answer_text', 'created_date']
+    list_per_page = 20
